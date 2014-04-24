@@ -13,4 +13,18 @@ class PaymentController extends BaseController{
         //s($_REQUEST);
         return $view;
     }
+
+    public function renderThankyou(){
+        s($_REQUEST);
+        $view = View::make('thankyou');
+        $view->title = 'Thank you';
+        return $view;
+    }
+
+    public function renderBackground(){
+        s($_REQUEST);
+        $view = View::make('background');
+        $view->title = 'background';
+        return $view;
+    }
 }

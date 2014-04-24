@@ -18,3 +18,5 @@ Route::get('/', function()
 
 Route::get('/signed', 'PaymentController@renderSignedData');
 Route::post('/unsigned', 'PaymentController@renderUnsignedData');
+Route::post('/background', 'PaymentController@renderBackground');
+Route::get('/thankyou', 'PaymentController@renderThankyou');
