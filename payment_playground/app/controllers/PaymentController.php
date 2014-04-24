@@ -15,6 +15,7 @@ class PaymentController extends BaseController{
     }
 
     public function renderThankyou(){
+        Log::info('-=-Thank you page-=-');
         $logString = print_r($_REQUEST, true);
         Log::info($logString);
         $view = View::make('thankyou');
@@ -23,6 +24,7 @@ class PaymentController extends BaseController{
     }
 
     public function renderBackground(){
+        Log::info('-=-Background-=-');
         $logString = print_r($_REQUEST, true);
         Log::info($logString);
         $view = View::make('background');
