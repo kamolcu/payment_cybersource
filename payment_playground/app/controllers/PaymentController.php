@@ -20,6 +20,7 @@ class PaymentController extends BaseController{
         Log::info($logString);
         $view = View::make('thankyou');
         $view->title = 'Thank you';
+        s($_REQUEST);
         return $view;
     }
 
