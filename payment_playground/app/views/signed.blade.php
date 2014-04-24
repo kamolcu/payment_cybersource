@@ -1,6 +1,6 @@
 @extends('layout.default')
 
-@section('form')
+@section('content')
 <form id="payment_form" action="{{{ URL::to('/unsigned')  }}}" method="post">
     <input type="hidden" name="access_key" value="6a9728be943a3803bf7878c8ce72bb02">
     <input type="hidden" name="profile_id" value="ba_pfid">
