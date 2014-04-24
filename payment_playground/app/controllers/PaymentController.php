@@ -15,7 +15,8 @@ class PaymentController extends BaseController{
     }
 
     public function renderThankyou(){
-        s($_REQUEST);
+        $logString = print_r($_REQUEST, true);
+        Log::info($logString);
         $view = View::make('thankyou');
         $view->title = 'Thank you';
         return $view;
