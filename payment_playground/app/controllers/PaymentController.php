@@ -22,7 +22,8 @@ class PaymentController extends BaseController{
     }
 
     public function renderBackground(){
-        s($_REQUEST);
+        $logString = print_r($_REQUEST, true);
+        Log::info($logString);
         $view = View::make('background');
         $view->title = 'background';
         return $view;
