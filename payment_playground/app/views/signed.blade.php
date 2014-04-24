@@ -1,4 +1,4 @@
-@extend('layout.default')
+@extends('layout.default')
 
 @section('form')
 <form id="payment_form" action="{{{ URL::to('/unsigned')  }}}" method="post">
