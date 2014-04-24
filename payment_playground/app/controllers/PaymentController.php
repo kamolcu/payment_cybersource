@@ -9,6 +9,8 @@ class PaymentController extends BaseController{
     public function renderUnsignedData(){
         $view = View::make('unsigned');
         $view->title = 'Unsigned Data Fields';
+        $view->request = $_REQUEST;
+        //s($_REQUEST);
         return $view;
     }
 }

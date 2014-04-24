@@ -6,6 +6,9 @@
 	"require": {
 		"laravel/framework": "4.1.*"
 	},
+	"require-dev": {
+        "raveren/kint": "dev-1.0.0-wip"
+    },
 	"autoload": {
 		"classmap": [
 			"app/commands",
@@ -13,7 +16,6 @@
 			"app/models",
 			"app/database/migrations",
 			"app/database/seeds",
-			"app/helper/SecurityHelper.php",
 			"app/tests/TestCase.php"
 		]
 	},

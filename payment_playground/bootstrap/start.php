@@ -58,7 +58,7 @@ $framework = $app['path.base'].
                  '/vendor/laravel/framework/src';
 
 require $framework.'/Illuminate/Foundation/start.php';
-
+require_once $app['path.base']. '/app/helper/SecurityHelper.php';
 /*
 |--------------------------------------------------------------------------
 | Return The Application
